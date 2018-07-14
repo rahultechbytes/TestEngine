@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/custom/design.css">
+    <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+    <script src="js/custom/utilities/utils.js"></script>
+    <script src="js/custom/models/student.js"></script>
+    <script src="js/custom/utilities/db.js"></script>
+    <script src="js/custom/controllers/studentcontroller.js"></script>
+</head>
+
+<body>
+    <p>Time Left <span id="time"></span></p>
+    <div id="status">
+
+    </div>
+    <hr>
+    <fieldset>
+        <legend>Test</legend>
+        <p id="question"></p>
+        <input type="radio" name="ans"> <span id="option0"> </span>
+        <br>
+        <input type="radio" name="ans"> <span id="option1"> </span>
+        <br>
+        <input type="radio" name="ans"> <span id="option2"> </span>
+        <br>
+        <input type="radio" name="ans"> <span id="option3"> </span>
+        <br>
+        <button id="prev">Prev</button>
+        <button id="next">Next</button>
+        <button>Finish</button>
+    </fieldset>
+</body>
+
+</html>

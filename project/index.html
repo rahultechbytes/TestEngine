@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+    <script src="js/custom/utilities/utils.js"></script>
+    <script src="js/custom/models/userRegisteration.js"></script>
+    <script src="js/custom/utilities/db.js"></script>
+    <!-- <script src="js/custom/config.js"></script>
+    <script src="js/custom/models/userlogin.js"></script>
+    <script src="js/custom/models/useroperations.js"></script> -->
+    <script src="js/custom/controllers/usercontroller.js"></script>
+    <link rel="stylesheet" href="css/custom/design.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <button  id="login" type="button" class="btn btn-primary">Login</button>
+        <button id="register" type="button" class="btn btn-success" >Register</button>
+
+        <div id="login_div" >
+            <h1>Login Form</h1>
+            <h2 id="message"> </h2>
+              <!-- <form> -->
+                <div class="form-group">
+                  <label for="userid">User Id</label>
+                  <input type="text" class="form-control" id="userid_txt" aria-describedby="emailHelp" placeholder="Enter userid">
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="password_txt" placeholder="Password">
+                </div>
+                <button type="submit" id="login_btn" class="btn btn-primary">Sign In</button>
+              <!-- </form> -->
+        </div>
+
+        <div id="register_div">
+            <h1>Registeration Form</h1>
+                <!-- <form> -->
+                        <div class="form-row">
+                          <div class="form-group col-md-6">
+                            <label for="userid">User Id</label>
+                            <input type="text" class="form-control" id="userid_reg" placeholder="Email">
+                          </div>
+                          <div class="form-group col-md-6">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" id="password_reg" placeholder="Password">
+                          </div>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="phoneNo">Phone No.</label>
+                            <input type="number" class="form-control" id="phone_no" placeholder="Phone Number">
+                        </div>
+                        <div class="form-group col-md-6" id="control">
+                          <input type="radio" name="type" id="teacher" value="teacher"> Teacher
+                          <input type="radio" name="type" id="student" value="student"> Student
+                      </div>
+                        <button type="submit" id="register_btn" class="btn btn-primary">Submit</button>
+                      <!-- </form> -->
+        </div>
+    </div>
+</body>
+</html>
